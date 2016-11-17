@@ -34,9 +34,9 @@
         <!-- Loading my very special explorer, available in my local repository -->
         <!--
         <dependency>
-          <groupId>eu.ace-design</groupId>
-          <artifactId>island-runner</artifactId>
-          <version>${island.version}</version>
+          <groupId>fr.unice.polytech.3a.qgl</groupId>
+          <artifactId>iaxx</artifactId>
+          <version>0.1-SNAPSHOT</version>
         </dependency>
         -->
 
