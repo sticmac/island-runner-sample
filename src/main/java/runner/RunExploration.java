@@ -24,6 +24,7 @@ public class RunExploration {
                 .collecting( 300, "QUARTZ")
                 .collecting(  10, "FLOWER")
                 .storingInto("./results")
+                .showReport()
                 .fire()
         ;
     }
