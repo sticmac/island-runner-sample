@@ -31,14 +31,11 @@
     </repositories>
 
     <dependencies>
-        <!-- Loading my very special explorer, available in my local repository -->
-        <!--
         <dependency>
           <groupId>fr.unice.polytech.3a.qgl</groupId>
-          <artifactId>iaxx</artifactId>
+          <artifactId>iadb</artifactId>
           <version>0.1-SNAPSHOT</version>
         </dependency>
-        -->
 
         <!-- Loading the Island Player Interface -->
         <dependency>
