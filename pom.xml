@@ -93,6 +93,9 @@
                 </executions>
                 <configuration>
                     <mainClass>runner.RunExploration</mainClass>
+                    <arguments>
+                        <argument>${map}</argument>
+                    </arguments>
                     <!-- Necessary to avoid thread cleanup after SVG generation (warning) -->
                     <cleanupDaemonThreads>false</cleanupDaemonThreads>
                 </configuration>

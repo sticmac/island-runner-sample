@@ -1,5 +1,7 @@
 package runner;
 
+import fr.unice.polytech.si3.qgl.iadb.Explorer;
+
 import java.io.File;
 import static eu.ace_design.island.runner.Runner.*;
 
@@ -13,9 +15,9 @@ public class RunExploration {
      */
     public static void main(String[] args) throws Exception {
 
-        run(sample.bot.Idiot.class)             // <== Change me!
-                .withName("My_Team_Name")
-                .exploring(loadResource("map.json"))
+        run(Explorer.class)             // <== Change me!
+                .withName("ISLDB :: Nyan")
+                .exploring(loadResource(args[0]))
                 .withSeed(0xB03CA1A997813D02L)
                 .startingAt(1,1,"EAST")
                 .backBefore(20000)
