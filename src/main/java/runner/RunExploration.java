@@ -1,6 +1,7 @@
 package runner;
 
 import fr.unice.polytech.si3.qgl.iadb.Explorer;
+import io.ReadTextFile;
 
 import java.io.File;
 import static eu.ace_design.island.runner.Runner.*;
@@ -29,6 +30,14 @@ public class RunExploration {
                 .showReport()
                 .fire()
         ;
+
+	    ReadTextFile io = new ReadTextFile("results/Explorer_ISLDB :: Nyan.json");
+	    if (io.getData().anyMatch(s -> s.contains("\"exception\":"))) {
+			System.err.println(args[0]+": failed");
+	    } else {
+	    	System.err.println(args[0]+": succeeded");
+	    }
+
     }
 
 
