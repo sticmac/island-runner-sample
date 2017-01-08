@@ -24,14 +24,14 @@ public class RunExploration {
                 .backBefore(20000)
                 .withCrew(15)
                 .collecting(1000, "WOOD"  )
-                .collecting( 300, "QUARTZ")
+		        .collecting(300, "FISH")
                 .collecting(  10, "FLOWER")
-                .storingInto("./results")
+                .storingInto("./results/"+args[0]+".d")
                 .showReport()
                 .fire()
         ;
 
-	    ReadTextFile io = new ReadTextFile("results/Explorer_ISLDB :: Nyan.json");
+	    ReadTextFile io = new ReadTextFile("results/"+args[0]+".d/Explorer_ISLDB :: Nyan.json");
 	    if (io.getData().anyMatch(s -> s.contains("\"exception\":"))) {
 			System.err.println(args[0]+": failed");
 	    } else {
